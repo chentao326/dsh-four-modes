@@ -1,0 +1,70 @@
+{
+  "name": "dsh-four-modes",
+  "version": "0.1.0",
+  "description": "在 DeepSeek Harness 会话中途切换四种内置 Agent 模式（标准 / PTC / 极简 / 创造）：输入框工具栏 chip + /mode 命令。",
+  "author": "chentao326",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chentao326/dsh-four-modes.git"
+  },
+  "homepage": "https://github.com/chentao326/dsh-four-modes#readme",
+  "bugs": {
+    "url": "https://github.com/chentao326/dsh-four-modes/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "agent-preset",
+    "mode-switcher",
+    "standard",
+    "ptc",
+    "minimal",
+    "cordis"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.1.1-rc.2"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "icon": "./icon.svg",
+  "scripts": {
+    "test": "node test/host.test.mjs && node test/host.roster.test.mjs && node test/client.test.mjs",
+    "test:browser": "node test/client.browser.mjs",
+    "test:all": "npm test && npm run test:browser"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-api-session-controller",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  }
+}

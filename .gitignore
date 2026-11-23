@@ -1,0 +1,17 @@
+# --- Node / dev ---
+node_modules/
+npm-debug.log*
+pnpm-debug.log*
+coverage/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# --- local scratch ---
+*.local
+*.log
+.tmp/
+tmp/

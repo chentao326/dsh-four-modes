@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Four Modes",
+    "description": "Switch this task's agent mode (Standard / PTC / Minimal / Creator) from the composer toolbar, even after it started. Also available as the /mode command."
+  }
+}

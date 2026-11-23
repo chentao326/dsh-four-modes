@@ -1,0 +1,6 @@
+# Host half of dsh-four-modes: registers the `/mode` slash command that
+# re-composes a live Agent onto another shipped preset (standard / code=PTC /
+# minimal / cordis=创造). The client half renders the composer toolbar control.
+- insert:
+    - id: four-modes
+      name: 'dsh-four-modes'
