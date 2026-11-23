@@ -236,6 +236,7 @@ dsh-four-modes/
 ├── locale/             zh and en copy
 ├── icon.svg
 ├── test/               four zero-dependency suites
+├── screenshots.json    storefront screenshots for dsh-market / awesome-dsh-plugin
 ├── docs/images/        README assets
 └── .github/workflows/  CI (Node 22/24 unit suites + real-Chrome suite)
 ```

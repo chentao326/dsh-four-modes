@@ -238,6 +238,7 @@ dsh-four-modes/
 ├── locale/             zh / en 文案
 ├── icon.svg
 ├── test/               4 个套件，零依赖
+├── screenshots.json    市场截图声明（dsh-market / awesome-dsh-plugin 读取）
 ├── docs/images/        README 素材
 └── .github/workflows/  CI（Node 22/24 单测 + 真实 Chrome 套件）
 ```
