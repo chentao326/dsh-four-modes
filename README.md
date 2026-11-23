@@ -13,7 +13,7 @@
 </div>
 
 <p align='center'>
-  <img src='./docs/images/demo.gif' width='820' alt='点击输入框工具栏的模式 chip 展开四个模式菜单，选择后 chip 立即切换；任务执行中 chip 被禁用' />
+  <img src='./docs/images/hero.png' width='720' alt='输入框工具栏中的模式 chip 与四项菜单：当前「标准模式」打勾，每项显示能力说明与记忆的模型' />
 </p>
 
 项目一旦产出内容，DSH 官方的 preset 选择器就消失了。**dsh-four-modes** 把选择器装回输入框：一个显示当前模式的 chip，点开即切；也可以直接输入 `/mode next`。切换复用 DSH 自己的 `recompose()` 机制，下一轮请求按新模式重建工具声明 —— 不重开会话，不丢上下文。
@@ -79,10 +79,6 @@ DSH 自带四种内置 Agent 模式（preset），但官方只在**新建会话*
 </p>
 
 点击 chip 展开菜单：当前模式打勾，每项带一句能力说明；用过「模式 + 模型」组合的话，说明后会追加记忆的模型名。
-
-<p align='center'>
-  <img src='./docs/images/menu.png' width='560' alt='点击 chip 展开四项菜单：标准模式 / PTC 模式 / 极简模式 / 创造模式，当前项打勾，并显示记忆的模型' />
-</p>
 
 - **视口自适应**：输入框贴着窗口底部，下方空间不足时菜单向上展开，永远不会被 composer 裁掉。
 - **键盘友好**：`Escape`、点击菜单外任意位置都会关闭。

@@ -1,6 +1,6 @@
 {
   "name": "dsh-four-modes",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "在 DeepSeek Harness 会话中途切换四种内置 Agent 模式（标准 / PTC / 极简 / 创造）：输入框工具栏 chip + /mode 命令。",
   "author": "chentao326",
   "license": "MIT",

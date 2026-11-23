@@ -2,6 +2,14 @@
 
 所有值得注意的变更都记录在这里。格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)，版本号遵循 [SemVer](https://semver.org/lang/zh-CN/)。
 
+## [0.1.1] - 2026-11-23
+
+### Changed（仅文档与素材，无代码变更）
+
+- 重新裁切 README 首屏图：换成「chip + 四项菜单」单张截图，去掉会露出大块空白区域的演示 GIF。
+- 裁掉输入框截图底部被切开的统计行。
+- 中英文 README 同步：删除已废弃的 `menu.png` / `demo.gif` 引用。
+
 ## [0.1.0] - 2026-11-23
 
 首个公开版本。

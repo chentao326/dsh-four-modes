@@ -13,7 +13,7 @@
 </div>
 
 <p align='center'>
-  <img src='./docs/images/demo.gif' width='820' alt='Clicking the mode chip in the composer toolbar opens a four-mode menu; the chip switches immediately after choosing; the chip is disabled while a turn is running' />
+  <img src='./docs/images/hero.png' width='720' alt='Mode chip in the composer toolbar and the four-mode menu: the current Standard row is checked, each row shows its abilities and remembered model' />
 </p>
 
 DSH removes the official preset picker as soon as a conversation produces content. **dsh-four-modes** puts a picker back into the composer: a chip that shows the current mode, and a menu that switches it. The switch reuses the DSH `recompose()` path, so the next request rebuilds tool declarations — no new session, no lost context.
@@ -77,10 +77,6 @@ Earlier community switchers hard-code preset ids (for example `ptc` for PTC mode
 </p>
 
 Clicking the chip opens the menu. The current mode is checked, every row carries a one-line description, and a row that remembers a model appends that model name.
-
-<p align='center'>
-  <img src='./docs/images/menu.png' width='560' alt='Four-mode menu opened from the chip: Standard, PTC, Minimal, Creator, current row checked, remembered model shown' />
-</p>
 
 - **Viewport aware**: the composer sits at the bottom, so a menu that would overflow flips upward instead of being clipped.
 - **Keyboard friendly**: `Escape` or a click outside closes the menu.
